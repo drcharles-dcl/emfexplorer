@@ -1,0 +1,27 @@
+  EMFexplorer
+====================
+
+version 1.0
+2004-sept-13
+
+  Building VC compilers
+====================
+A Visual C++ 6 project (AMakeAllEMFx.dsp) and a workspace (AMakeAllEMFx.dsw) are
+ready to build.
+
+1. First read the instructions in the file SCGenInclude.h to set INCLUDE paths
+
+2. Then build and enjoy!
+
+Note: the building process will register SCEMFAx.ocx.
+
+Other compilers
+====================
+I would be pleased to receive make files and incorporate them to the distribution.
+
+
+--------------------------
+Copyright (C) 2004 Smith Charles.
+*   If you are interested in support for this source code,
+*   contact Smith Charles <smith.charles@free.fr> for more information.
+

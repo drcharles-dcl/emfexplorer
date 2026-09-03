@@ -1,0 +1,395 @@
+/*
+*	This file is part of the EMFexplorer projet.
+*	Copyright (C) 2004 Smith Charles.
+*
+*	This library is free software; you can redistribute it and/or
+*	modify it under the terms of the GNU Lesser General Public
+*	License as published by the Free Software Foundation; either
+*	version 2.1 of the License, or (at your option) any later version.
+*
+*   This library is distributed in the hope that it will be useful,
+*   but WITHOUT ANY WARRANTY; without even the implied warranty of
+*   MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU
+*   Lesser General Public License for more details.
+*
+*   You should have received a copy of the GNU Lesser General Public
+*   License along with this library; if not, write to the Free Software
+*   Foundation, Inc., 59 Temple Place, Suite 330, Boston, MA  02111-1307  USA.
+*
+*	Extension: for commercial use, apply the Equity Public License, which
+*	adds to the normal terms of the GLPL a condition of donation to the author.
+*   If you are interested in support for this source code,
+*   contact Smith Charles <smith.charles@free.fr> for more information.
+*/
+//Microsoft Developer Studio generated resource script.
+//
+#include "resource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#include "afxres.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// English (U.S.) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)
+#ifdef _WIN32
+LANGUAGE LANG_ENGLISH, SUBLANG_ENGLISH_US
+#pragma code_page(1252)
+#endif //_WIN32
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_ABOUTBOX_SCEMFAX DIALOG DISCARDABLE  34, 22, 260, 55
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "About SCEMFAx Control"
+FONT 8, "MS Sans Serif"
+BEGIN
+    ICON            IDI_ABOUTDLL,IDC_STATIC,10,10,20,20
+    LTEXT           "EMF ActiveX Control, Version 1.0",IDC_STATIC,40,10,170,
+                    8
+    LTEXT           "Copyright (C) 2004, Smith Charles",IDC_STATIC,40,25,170,
+                    8
+    DEFPUSHBUTTON   "OK",IDOK,221,7,32,14,WS_GROUP
+END
+
+IDD_PROPPAGE_SCEMFAX DIALOG DISCARDABLE  0, 0, 250, 110
+STYLE WS_CHILD
+FONT 8, "MS Sans Serif"
+BEGIN
+    GROUPBOX        "Orientation",IDC_STATIC,15,6,94,35
+    CONTROL         "0",IDC_RADIO_ORIENT0,"Button",BS_AUTORADIOBUTTON | 
+                    WS_GROUP,20,17,20,10
+    CONTROL         "90",IDC_RADIO_ORIENT90,"Button",BS_AUTORADIOBUTTON,20,
+                    28,24,10
+    CONTROL         "180",IDC_RADIO_ORIENT180,"Button",BS_AUTORADIOBUTTON,65,
+                    17,28,10
+    CONTROL         "270",IDC_RADIO_ORIENT270,"Button",BS_AUTORADIOBUTTON,65,
+                    28,28,10
+    GROUPBOX        "Scaling",IDC_STATIC,15,45,93,29
+    COMBOBOX        IDC_COMBO_OPTGEN_ZOOM,22,55,78,186,CBS_DROPDOWN | 
+                    WS_VSCROLL | WS_GROUP | WS_TABSTOP
+    GROUPBOX        "Margins",IDC_STATIC,15,76,95,29
+    GROUPBOX        "Picture Frame",IDC_STATIC,125,7,117,24
+    CONTROL         "Border",IDC_CHECK_PICTURE_BORDER,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,135,17,36,10
+    CONTROL         "Shadow",IDC_CHECK_PICTURE_SHADOW,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,186,17,42,10
+    GROUPBOX        "Control",IDC_STATIC,126,32,117,74
+    CONTROL         "Transparent (ambient)",IDC_RADIO_CTLCOLOR_TRANS,"Button",
+                    BS_AUTORADIOBUTTON | WS_GROUP,136,62,94,10
+    CONTROL         "System",IDC_RADIO_CTLCOLOR_SYS,"Button",
+                    BS_AUTORADIOBUTTON,136,75,39,10
+    CONTROL         "RGB",IDC_RADIO_CTLCOLOR_RGB,"Button",BS_AUTORADIOBUTTON,
+                    136,88,31,10
+    COMBOBOX        IDC_COMBO_CTLCOLOR_SYS,184,73,48,218,CBS_DROPDOWNLIST | 
+                    CBS_OWNERDRAWVARIABLE | CBS_SORT | WS_VSCROLL | 
+                    WS_TABSTOP
+    COMBOBOX        IDC_COMBO_CTLCOLOR_RGB,184,87,47,218,CBS_DROPDOWNLIST | 
+                    CBS_OWNERDRAWVARIABLE | WS_VSCROLL | WS_TABSTOP
+    COMBOBOX        IDC_COMBO_CTL_BORDER,186,39,48,58,CBS_DROPDOWNLIST | 
+                    WS_VSCROLL | WS_TABSTOP
+    LTEXT           "Border:",IDC_STATIC,159,41,24,8
+    GROUPBOX        "Background",IDC_STATIC,130,52,109,50
+    EDITTEXT        IDC_EDIT_MARGINS_L,19,86,21,14,ES_AUTOHSCROLL | 
+                    ES_WANTRETURN | ES_NUMBER
+    EDITTEXT        IDC_EDIT_MARGINS_T,41,86,21,14,ES_AUTOHSCROLL | 
+                    ES_WANTRETURN | ES_NUMBER
+    EDITTEXT        IDC_EDIT_MARGINS_R,63,86,21,14,ES_AUTOHSCROLL | 
+                    ES_WANTRETURN | ES_NUMBER
+    EDITTEXT        IDC_EDIT_MARGINS_B,85,86,21,14,ES_AUTOHSCROLL | 
+                    ES_WANTRETURN | ES_NUMBER
+END
+
+IDD_PROPPAGE_GDIPLUS DIALOG DISCARDABLE  0, 0, 250, 110
+STYLE WS_CHILD
+FONT 8, "MS Sans Serif"
+BEGIN
+    CONTROL         "Use GDI+",IDC_CHK_OPTGEN_USEGDIP,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,7,7,47,10
+    GROUPBOX        "Text Rendering",IDC_STATIC,7,22,118,82
+    LTEXT           "Quality",IDC_STATIC,11,35,22,8
+    COMBOBOX        IDC_COMBO_GDIP_TEXTHINTING,11,47,107,87,CBS_DROPDOWNLIST | 
+                    WS_VSCROLL | WS_TABSTOP
+    LTEXT           "Contrast",IDC_STATIC,11,70,27,8
+    COMBOBOX        IDC_COMBO_GDIP_TEXTCONTRAST,11,81,72,228,
+                    CBS_DROPDOWNLIST | WS_VSCROLL | WS_TABSTOP
+    GROUPBOX        "Images and Lines Modes",IDC_STATIC,130,20,112,85
+    LTEXT           "Smoothing",IDC_STATIC,137,30,34,8
+    COMBOBOX        IDC_COMBO_GDIP_SMOOTHING,137,39,99,89,CBS_DROPDOWNLIST | 
+                    WS_VSCROLL | WS_TABSTOP
+    LTEXT           "Interpolation",IDC_STATIC,137,53,40,8
+    COMBOBOX        IDC_COMBO_GDIP_INTERPOLATION,137,62,99,92,
+                    CBS_DROPDOWNLIST | WS_VSCROLL | WS_TABSTOP
+    LTEXT           "PixelOffset",IDC_STATIC,137,78,34,8
+    COMBOBOX        IDC_COMBO_GDIP_PIXELOFFSET,137,87,99,85,CBS_DROPDOWNLIST | 
+                    WS_VSCROLL | WS_TABSTOP
+END
+
+IDD_PROPPAGE_COLORS DIALOG DISCARDABLE  0, 0, 250, 110
+STYLE WS_CHILD
+FONT 8, "MS Sans Serif"
+BEGIN
+    GROUPBOX        "Paper Color",IDC_STATIC,15,6,121,45
+    CONTROL         "Transparent",IDC_RADIO_PAPERCOLOR_TRANS,"Button",
+                    BS_AUTORADIOBUTTON | WS_GROUP,20,17,54,10
+    CONTROL         "System",IDC_RADIO_PAPERCOLOR_SYS,"Button",
+                    BS_AUTORADIOBUTTON,20,27,39,10
+    CONTROL         "RGB",IDC_RADIO_PAPERCOLOR_RGB,"Button",
+                    BS_AUTORADIOBUTTON,20,39,31,10
+    COMBOBOX        IDC_COMBO_PAPERCOLOR_SYS,76,22,54,218,CBS_DROPDOWNLIST | 
+                    CBS_OWNERDRAWVARIABLE | CBS_SORT | WS_VSCROLL | 
+                    WS_TABSTOP
+    COMBOBOX        IDC_COMBO_PAPERCOLOR_RGB,76,35,54,218,CBS_DROPDOWNLIST | 
+                    CBS_OWNERDRAWVARIABLE | WS_VSCROLL | WS_TABSTOP
+    GROUPBOX        "Reverse video",IDC_STATIC,147,6,82,46,WS_GROUP
+    CONTROL         "None",IDC_RADIO_RVIDEO_NONE,"Button",BS_AUTORADIOBUTTON | 
+                    WS_GROUP,157,16,33,10
+    CONTROL         "Normal (Full)",IDC_RADIO_RVIDEO_FULL,"Button",
+                    BS_AUTORADIOBUTTON,157,27,55,10
+    CONTROL         "Skip bitmaps",IDC_RADIO_RVIDEO_SKIPBITMAPS,"Button",
+                    BS_AUTORADIOBUTTON,157,40,56,10
+    GROUPBOX        "Transparency Mode",IDC_STATIC,13,55,216,48
+    CONTROL         "Normal (transparent objects only)",
+                    IDC_RADIO_TRANSP_NORMAL,"Button",BS_AUTORADIOBUTTON | 
+                    WS_GROUP,17,66,119,10
+    CONTROL         "White color transparent, except in bitmaps",
+                    IDC_RADIO_TRANSP_SKIPBITMAPS,"Button",BS_AUTORADIOBUTTON,
+                    17,77,148,10
+    CONTROL         "Make white color transparent everywhere",
+                    IDC_RADIO_TRANSP_FULL,"Button",BS_AUTORADIOBUTTON,17,87,
+                    146,10
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO DISCARDABLE 
+BEGIN
+    IDD_ABOUTBOX_SCEMFAX, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 253
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 48
+    END
+
+    IDD_PROPPAGE_SCEMFAX, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 243
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 103
+    END
+
+    IDD_PROPPAGE_GDIPLUS, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 243
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 103
+    END
+
+    IDD_PROPPAGE_COLORS, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 243
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 103
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Menu
+//
+
+IDR_CTX_MENU MENU DISCARDABLE 
+BEGIN
+    POPUP "TrackPopup1"
+    BEGIN
+        MENUITEM "Save &As...",                 ID_FILE_SAVE_AS
+        MENUITEM SEPARATOR
+        MENUITEM "&Background...",              ID_TBDOC_BKCOLOR
+        MENUITEM SEPARATOR
+        MENUITEM "Use &GDI+",                   ID_TBDOC_USEGDIP
+        MENUITEM "&Reverse Video",              ID_TBDOC_REVERSE_VIDEO
+        MENUITEM SEPARATOR
+        MENUITEM "&Properties...",              ID_TOOLS_OPTIONS
+    END
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// String Table
+//
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_FILE_SAVE_AS         "Save the active page with a new name\nSave As"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_TBDOC_BKCOLOR        "Change background color\nBackground Color"
+    ID_TBDOC_USEGDIP        "Toggle GDI+ rasterizer ON/OFF\nUse GDI+"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_TOOLS_OPTIONS        "General options, Color preferences\nOptions"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_TBDOC_REVERSE        "Toggle reverse video"
+    ID_TBDOC_REVERSE_VIDEO  "Toggle Reverse video ON/OFF\nReverse Video"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    IDS_SCEMFAX             "SCEMFAx Control"
+    IDS_SCEMFAX_PPG         "SCEMFAx Property Page"
+    IDS_SCEMFAX_GDIP_PPG    "SCEMFAx GDIplus Property Page"
+    IDS_SCEMFAX_COLORS_PPG  "SCEMFAx Colors Property Page"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    IDS_SCEMFAX_PPG_CAPTION "General"
+    IDS_SCEMFAX_GDIP_PPG_CAPTION "GDI+"
+    IDS_SCEMFAX_COLORS_PPG_CAPTION "Picture Colors"
+END
+
+#endif    // English (U.S.) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+/////////////////////////////////////////////////////////////////////////////
+// French (France) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_FRA)
+#ifdef _WIN32
+LANGUAGE LANG_FRENCH, SUBLANG_FRENCH
+#pragma code_page(1252)
+#endif //_WIN32
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "resource.h\0"
+END
+
+2 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "#include ""afxres.h""\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "1 TYPELIB ""SCEMFAx.tlb""\r\n"
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+
+#ifndef _MAC
+/////////////////////////////////////////////////////////////////////////////
+//
+// Version
+//
+
+VS_VERSION_INFO VERSIONINFO
+ FILEVERSION 1,0,0,1
+ PRODUCTVERSION 1,0,0,1
+ FILEFLAGSMASK 0x3fL
+#ifdef _DEBUG
+ FILEFLAGS 0x1L
+#else
+ FILEFLAGS 0x0L
+#endif
+ FILEOS 0x4L
+ FILETYPE 0x2L
+ FILESUBTYPE 0x0L
+BEGIN
+    BLOCK "StringFileInfo"
+    BEGIN
+        BLOCK "040904b0"
+        BEGIN
+            VALUE "Comments", "Beta version\0"
+            VALUE "CompanyName", "Smith Charles\0"
+            VALUE "FileDescription", "SCEMFAx ActiveX Control Module\0"
+            VALUE "FileVersion", "1, 0, 0, 1\0"
+            VALUE "InternalName", "SCEMFAx\0"
+            VALUE "LegalCopyright", "Copyright (C) 2004\0"
+            VALUE "LegalTrademarks", "\0"
+            VALUE "OLESelfRegister", "\0"
+            VALUE "OriginalFilename", "SCEMFAx.OCX\0"
+            VALUE "PrivateBuild", "\0"
+            VALUE "ProductName", "SCEMFAx ActiveX Control Module\0"
+            VALUE "ProductVersion", "1, 0, 0, 1\0"
+            VALUE "SpecialBuild", "\0"
+        END
+    END
+    BLOCK "VarFileInfo"
+    BEGIN
+        VALUE "Translation", 0x409, 1200
+    END
+END
+
+#endif    // !_MAC
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Icon
+//
+
+// Icon with lowest ID value placed first to ensure application icon
+// remains consistent on all systems.
+IDI_ABOUTDLL            ICON    DISCARDABLE     "SCEMFAx.ico"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Bitmap
+//
+
+IDB_SCEMFAX             BITMAP  DISCARDABLE     "SCEMFAxCtl.bmp"
+#endif    // French (France) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+1 TYPELIB "SCEMFAx.tlb"
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+

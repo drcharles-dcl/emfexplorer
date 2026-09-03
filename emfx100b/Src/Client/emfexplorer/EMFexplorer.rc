@@ -1,0 +1,1004 @@
+/*
+*	This file is part of the EMFexplorer projet.
+*	Copyright (C) 2004 Smith Charles.
+*
+*	This library is free software; you can redistribute it and/or
+*	modify it under the terms of the GNU Lesser General Public
+*	License as published by the Free Software Foundation; either
+*	version 2.1 of the License, or (at your option) any later version.
+*
+*   This library is distributed in the hope that it will be useful,
+*   but WITHOUT ANY WARRANTY; without even the implied warranty of
+*   MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU
+*   Lesser General Public License for more details.
+*
+*   You should have received a copy of the GNU Lesser General Public
+*   License along with this library; if not, write to the Free Software
+*   Foundation, Inc., 59 Temple Place, Suite 330, Boston, MA  02111-1307  USA.
+*
+*	Extension: for commercial use, apply the Equity Public License, which
+*	adds to the normal terms of the GLPL a condition of donation to the author.
+*   If you are interested in support for this source code,
+*   contact Smith Charles <smith.charles@free.fr> for more information.
+*/
+//Microsoft Developer Studio generated resource script.
+//
+#include "resource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#include "afxres.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// English (U.S.) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)
+#ifdef _WIN32
+LANGUAGE LANG_ENGLISH, SUBLANG_ENGLISH_US
+#pragma code_page(1252)
+#endif //_WIN32
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Icon
+//
+
+// Icon with lowest ID value placed first to ensure application icon
+// remains consistent on all systems.
+IDR_MAINFRAME           ICON    DISCARDABLE     "res\\EMFexplorer.ico"
+IDR_EMFEXPTYPE          ICON    DISCARDABLE     "res\\EMFexplorerDoc.ico"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Bitmap
+//
+
+IDR_MAINFRAME           BITMAP  MOVEABLE PURE   "res\\Toolbar.bmp"
+IDR_TB_GDIPLUS          BITMAP  DISCARDABLE     "res\\toolbar1.bmp"
+IDR_SRVR_INPLACE        BITMAP  MOVEABLE PURE   "res\\IToolbar.bmp"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Toolbar
+//
+
+IDR_MAINFRAME TOOLBAR DISCARDABLE  16, 15
+BEGIN
+    BUTTON      ID_FILE_NEW
+    BUTTON      ID_FILE_OPEN
+    BUTTON      ID_FILE_SAVE
+    SEPARATOR
+    BUTTON      ID_EDIT_CUT
+    BUTTON      ID_EDIT_COPY
+    BUTTON      ID_EDIT_PASTE
+    SEPARATOR
+    BUTTON      ID_FILE_PRINT
+    SEPARATOR
+    BUTTON      ID_TBNAV_FIRST
+    BUTTON      ID_TBNAV_PREV
+    BUTTON      ID_TBNAV_TOPAGE
+    BUTTON      ID_TBNAV_NEXT
+    BUTTON      ID_TBNAV_LAST
+    SEPARATOR
+    BUTTON      ID_TB_DPI_DEC
+    BUTTON      ID_TB_DPI_100
+    BUTTON      ID_TBVIEW_ZOOM
+    BUTTON      ID_TB_DPI_MONITOR
+    BUTTON      ID_TB_DPI_INC
+    SEPARATOR
+    BUTTON      ID_TB_PAGE_ROTATELEFT
+    BUTTON      ID_TB_PAGE_ROTATERIGHT
+    SEPARATOR
+    BUTTON      ID_TBVIEW_BKCOLOR
+    BUTTON      ID_TB_PAGE_REVERSEVIDEO
+    SEPARATOR
+    BUTTON      ID_VIEW_EMF_ASTEXT
+    SEPARATOR
+    BUTTON      ID_TBDOC_USEGDIP
+    SEPARATOR
+    BUTTON      ID_APP_ABOUT
+    BUTTON      ID_TOOLS_PAGE_URL
+END
+
+IDR_TB_GDIPLUS TOOLBAR DISCARDABLE  16, 15
+BEGIN
+    BUTTON      ID_TBGDIP_TEXTRENDERING
+    BUTTON      ID_TBGDIP_TEXTCONTRAST
+    SEPARATOR
+    BUTTON      ID_TBGDIP_CURVESMOOTHING
+    SEPARATOR
+    BUTTON      ID_TBGDIP_IMAGESMOOTHING
+    BUTTON      ID_TBGDIP_IMAGEPIXELSOFFSET
+END
+
+IDR_SRVR_INPLACE TOOLBAR DISCARDABLE  16, 15
+BEGIN
+    BUTTON      ID_EDIT_CUT
+    BUTTON      ID_EDIT_COPY
+    BUTTON      ID_EDIT_PASTE
+    SEPARATOR
+    BUTTON      ID_FILE_PRINT
+    SEPARATOR
+    BUTTON      ID_TBNAV_FIRST
+    BUTTON      ID_TBNAV_PREV
+    BUTTON      ID_TBNAV_TOPAGE
+    BUTTON      ID_TBNAV_NEXT
+    BUTTON      ID_TBNAV_LAST
+    SEPARATOR
+    BUTTON      ID_TB_DPI_DEC
+    BUTTON      ID_TB_DPI_100
+    BUTTON      ID_TBVIEW_ZOOM
+    BUTTON      ID_TB_DPI_MONITOR
+    BUTTON      ID_TB_DPI_INC
+    SEPARATOR
+    BUTTON      ID_TB_PAGE_ROTATELEFT
+    BUTTON      ID_TB_PAGE_ROTATERIGHT
+    SEPARATOR
+    BUTTON      ID_TBVIEW_BKCOLOR
+    BUTTON      ID_TB_PAGE_REVERSEVIDEO
+    SEPARATOR
+    BUTTON      ID_TBDOC_USEGDIP
+    SEPARATOR
+    BUTTON      ID_APP_ABOUT
+    BUTTON      ID_CONTEXT_HELP
+    BUTTON      ID_TOOLS_PAGE_URL
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Menu
+//
+
+IDR_MAINFRAME MENU PRELOAD DISCARDABLE 
+BEGIN
+    POPUP "&File"
+    BEGIN
+        MENUITEM "&New\tCtrl+N",                ID_FILE_NEW
+        MENUITEM "&Open...\tCtrl+O",            ID_FILE_OPEN
+        MENUITEM "&Save\tCtrl+S",               ID_FILE_SAVE
+        MENUITEM "Save &As...",                 ID_FILE_SAVE_AS
+        MENUITEM SEPARATOR
+        MENUITEM "Save Page As...",             ID_FILE_SAVEPAGE
+        MENUITEM "Save All Pages As...",        ID_FILE_SAVEALL
+        MENUITEM SEPARATOR
+        MENUITEM "&Print...\tCtrl+P",           ID_FILE_PRINT
+        MENUITEM "Print Pre&view",              ID_FILE_PRINT_PREVIEW
+        MENUITEM "P&rint Setup...",             ID_FILE_PRINT_SETUP
+        MENUITEM SEPARATOR
+        MENUITEM "Recent File",                 ID_FILE_MRU_FILE1, GRAYED
+        MENUITEM SEPARATOR
+        MENUITEM "E&xit",                       ID_APP_EXIT
+    END
+    POPUP "&Edit"
+    BEGIN
+        MENUITEM "&Undo\tCtrl+Z",               ID_EDIT_UNDO
+        MENUITEM SEPARATOR
+        MENUITEM "Cu&t\tCtrl+X",                ID_EDIT_CUT
+        MENUITEM "&Copy\tCtrl+C",               ID_EDIT_COPY
+        MENUITEM "&Paste\tCtrl+V",              ID_EDIT_PASTE
+    END
+    POPUP "&Document"
+    BEGIN
+        MENUITEM "&First Page",                 ID_TBNAV_FIRST
+        MENUITEM "&Previous page",              ID_TBNAV_PREV
+        MENUITEM "&Next Page",                  ID_TBNAV_NEXT
+        MENUITEM "&Last Page",                  ID_TBNAV_LAST
+        MENUITEM SEPARATOR
+        MENUITEM "&Size All Pages",             ID_TBDOC_RESIZEALL
+        MENUITEM "Add Pages...",                ID_TBDOC_ADD_PAGES
+        MENUITEM "Remove Page",                 ID_TBDOC_REMOVE_PAGE
+        MENUITEM SEPARATOR
+        MENUITEM "&Background...",              ID_TBDOC_BKCOLOR
+        MENUITEM "Use &GDI+",                   ID_TBDOC_USEGDIP
+        MENUITEM "&Match Screen DPI",           ID_TB_DPI_MONITOR
+        MENUITEM SEPARATOR
+        MENUITEM "Reflow...",                   ID_TBDOC_REFLOW
+        MENUITEM "More S&ettings...",           ID_TBDOC_SETTINGS
+    END
+    POPUP "&Tools"
+    BEGIN
+        MENUITEM "&Options...",                 ID_TOOLS_OPTIONS
+        MENUITEM "Open Credit URL...",          ID_TOOLS_PAGE_URL
+    END
+    POPUP "&View"
+    BEGIN
+        MENUITEM "&Toolbar",                    ID_VIEW_TOOLBAR
+        MENUITEM "&Status Bar",                 ID_VIEW_STATUS_BAR
+        MENUITEM SEPARATOR
+        MENUITEM "&GDI+ Toolbar",               ID_VIEW_GDIP_BAR
+        MENUITEM SEPARATOR
+        MENUITEM "&EMF As Text",                ID_VIEW_EMF_ASTEXT
+        MENUITEM SEPARATOR
+        MENUITEM "Rotate &Left",                ID_TB_PAGE_ROTATELEFT
+        MENUITEM "Rotate &Right",               ID_TB_PAGE_ROTATERIGHT
+    END
+    POPUP "&Help"
+    BEGIN
+        MENUITEM "&About EMFexplorer...",       ID_APP_ABOUT
+    END
+END
+
+IDR_SRVR_INPLACE MENU PRELOAD DISCARDABLE 
+BEGIN
+    POPUP "&Edit"
+    BEGIN
+        MENUITEM "&Undo\tCtrl+Z",               ID_EDIT_UNDO
+        MENUITEM SEPARATOR
+        MENUITEM "Cu&t\tCtrl+X",                ID_EDIT_CUT
+        MENUITEM "&Copy\tCtrl+C",               ID_EDIT_COPY
+        MENUITEM "&Paste\tCtrl+V",              ID_EDIT_PASTE
+    END
+    POPUP "&View"
+    BEGIN
+        MENUITEM "&Toolbar",                    ID_VIEW_TOOLBAR
+    END
+    MENUITEM SEPARATOR
+    MENUITEM SEPARATOR
+    POPUP "&Help"
+    BEGIN
+        MENUITEM "&Help Topics",                ID_HELP_FINDER
+        MENUITEM SEPARATOR
+        MENUITEM "&About EMFExplorer...",       ID_APP_ABOUT
+    END
+END
+
+IDR_SRVR_EMBEDDED MENU PRELOAD DISCARDABLE 
+BEGIN
+    POPUP "&File"
+    BEGIN
+        MENUITEM "&Update\tCtrl+S",             ID_FILE_UPDATE
+        MENUITEM "Save Copy &As...",            ID_FILE_SAVE_COPY_AS
+        MENUITEM SEPARATOR
+        MENUITEM "Save Page As...",             ID_FILE_SAVEPAGE
+        MENUITEM "Save All Pages As...",        ID_FILE_SAVEALL
+        MENUITEM SEPARATOR
+        MENUITEM "&Print...\tCtrl+P",           ID_FILE_PRINT
+        MENUITEM "Print Pre&view",              ID_FILE_PRINT_PREVIEW
+        MENUITEM "P&rint Setup...",             ID_FILE_PRINT_SETUP
+        MENUITEM SEPARATOR
+        MENUITEM "E&xit",                       ID_APP_EXIT
+    END
+    POPUP "&Edit"
+    BEGIN
+        MENUITEM "&Undo\tCtrl+Z",               ID_EDIT_UNDO
+        MENUITEM SEPARATOR
+        MENUITEM "Cu&t\tCtrl+X",                ID_EDIT_CUT
+        MENUITEM "&Copy\tCtrl+C",               ID_EDIT_COPY
+        MENUITEM "&Paste\tCtrl+V",              ID_EDIT_PASTE
+    END
+    POPUP "&Document"
+    BEGIN
+        MENUITEM "&First Page",                 ID_TBNAV_FIRST
+        MENUITEM "&Previous page",              ID_TBNAV_PREV
+        MENUITEM "&Next Page",                  ID_TBNAV_NEXT
+        MENUITEM "&Last Page",                  ID_TBNAV_LAST
+        MENUITEM SEPARATOR
+        MENUITEM "Size All Pages",              ID_TBDOC_RESIZEALL
+        MENUITEM "Add Pages...",                ID_TBDOC_ADD_PAGES
+        MENUITEM "Remove Page",                 ID_TBDOC_REMOVE_PAGE
+        MENUITEM SEPARATOR
+        MENUITEM "&Background...",              ID_TBDOC_BKCOLOR
+        MENUITEM "Use &GDI+",                   ID_TBDOC_USEGDIP
+        MENUITEM "&Match Screen DPI",           ID_TB_DPI_MONITOR
+        MENUITEM SEPARATOR
+        MENUITEM "Reflow...",                   ID_TBDOC_REFLOW
+        MENUITEM "More S&ettings...",           ID_TBDOC_SETTINGS
+    END
+    POPUP "&Tools"
+    BEGIN
+        MENUITEM "&Options...",                 ID_TOOLS_OPTIONS
+        MENUITEM "Open Credit URL...",          ID_TOOLS_PAGE_URL
+    END
+    POPUP "&View"
+    BEGIN
+        MENUITEM "&Toolbar",                    ID_VIEW_TOOLBAR
+        MENUITEM "&Status Bar",                 ID_VIEW_STATUS_BAR
+        MENUITEM SEPARATOR
+        MENUITEM "&GDI+ Toolbar",               ID_VIEW_GDIP_BAR
+        MENUITEM SEPARATOR
+        MENUITEM "&EMF As Text",                ID_VIEW_EMF_ASTEXT
+        MENUITEM SEPARATOR
+        MENUITEM "Rotate &Left",                ID_TB_PAGE_ROTATELEFT
+        MENUITEM "Rotate &Right",               ID_TB_PAGE_ROTATERIGHT
+    END
+    POPUP "&Help"
+    BEGIN
+        MENUITEM "&Help Topics",                ID_HELP_FINDER
+        MENUITEM SEPARATOR
+        MENUITEM "&About EMFExplorer...",       ID_APP_ABOUT
+    END
+END
+
+IDR_CTX_MENU MENU DISCARDABLE 
+BEGIN
+    POPUP "TrackPopup1"
+    BEGIN
+        MENUITEM "Cu&t\tCtrl+X",                ID_EDIT_CUT
+        MENUITEM "&Copy\tCtrl+C",               ID_EDIT_COPY
+        MENUITEM "&Paste\tCtrl+V",              ID_EDIT_PASTE
+        MENUITEM SEPARATOR
+        MENUITEM "Save Page As...",             ID_FILE_SAVEPAGE
+        MENUITEM SEPARATOR
+        MENUITEM "&Background...",              ID_TBDOC_BKCOLOR
+        MENUITEM "Use &GDI+",                   ID_TBDOC_USEGDIP
+        MENUITEM "&Reverse Video",              ID_TB_PAGE_REVERSEVIDEO
+        MENUITEM SEPARATOR
+        MENUITEM "Open Credit URL...",          ID_TOOLS_PAGE_URL
+        MENUITEM SEPARATOR
+        MENUITEM "&Properties...",              ID_TBDOC_SETTINGS
+    END
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Accelerator
+//
+
+IDR_MAINFRAME ACCELERATORS PRELOAD MOVEABLE PURE 
+BEGIN
+    "N",            ID_FILE_NEW,            VIRTKEY, CONTROL
+    "O",            ID_FILE_OPEN,           VIRTKEY, CONTROL
+    "S",            ID_FILE_SAVE,           VIRTKEY, CONTROL
+    "P",            ID_FILE_PRINT,          VIRTKEY, CONTROL
+    "Z",            ID_EDIT_UNDO,           VIRTKEY, CONTROL
+    "X",            ID_EDIT_CUT,            VIRTKEY, CONTROL
+    "C",            ID_EDIT_COPY,           VIRTKEY, CONTROL
+    "V",            ID_EDIT_PASTE,          VIRTKEY, CONTROL
+    VK_BACK,        ID_EDIT_UNDO,           VIRTKEY, ALT
+    VK_DELETE,      ID_EDIT_CUT,            VIRTKEY, SHIFT
+    VK_INSERT,      ID_EDIT_COPY,           VIRTKEY, CONTROL
+    VK_INSERT,      ID_EDIT_PASTE,          VIRTKEY, SHIFT
+    VK_F6,          ID_NEXT_PANE,           VIRTKEY 
+    VK_F6,          ID_PREV_PANE,           VIRTKEY, SHIFT
+END
+
+IDR_SRVR_INPLACE ACCELERATORS PRELOAD MOVEABLE PURE 
+BEGIN
+    "Z",            ID_EDIT_UNDO,           VIRTKEY, CONTROL
+    "X",            ID_EDIT_CUT,            VIRTKEY, CONTROL
+    "C",            ID_EDIT_COPY,           VIRTKEY, CONTROL
+    "V",            ID_EDIT_PASTE,          VIRTKEY, CONTROL
+    VK_BACK,        ID_EDIT_UNDO,           VIRTKEY, ALT
+    VK_DELETE,      ID_EDIT_CUT,            VIRTKEY, SHIFT
+    VK_INSERT,      ID_EDIT_COPY,           VIRTKEY, CONTROL
+    VK_INSERT,      ID_EDIT_PASTE,          VIRTKEY, SHIFT
+    VK_F1,          ID_CONTEXT_HELP,        VIRTKEY, SHIFT
+    VK_F1,          ID_HELP,                VIRTKEY 
+    VK_ESCAPE,      ID_CANCEL_EDIT_SRVR,    VIRTKEY, NOINVERT
+END
+
+IDR_SRVR_EMBEDDED ACCELERATORS PRELOAD MOVEABLE PURE 
+BEGIN
+    "S",            ID_FILE_UPDATE,         VIRTKEY, CONTROL
+    "P",            ID_FILE_PRINT,          VIRTKEY, CONTROL
+    "Z",            ID_EDIT_UNDO,           VIRTKEY, CONTROL
+    "X",            ID_EDIT_CUT,            VIRTKEY, CONTROL
+    "C",            ID_EDIT_COPY,           VIRTKEY, CONTROL
+    "V",            ID_EDIT_PASTE,          VIRTKEY, CONTROL
+    VK_BACK,        ID_EDIT_UNDO,           VIRTKEY, ALT
+    VK_DELETE,      ID_EDIT_CUT,            VIRTKEY, SHIFT
+    VK_INSERT,      ID_EDIT_COPY,           VIRTKEY, CONTROL
+    VK_INSERT,      ID_EDIT_PASTE,          VIRTKEY, SHIFT
+    VK_F6,          ID_NEXT_PANE,           VIRTKEY 
+    VK_F6,          ID_PREV_PANE,           VIRTKEY, SHIFT
+    VK_F1,          ID_CONTEXT_HELP,        VIRTKEY, SHIFT
+    VK_F1,          ID_HELP,                VIRTKEY 
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_ABOUTBOX DIALOG DISCARDABLE  0, 0, 235, 78
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "About EMFexplorer"
+FONT 8, "MS Sans Serif"
+BEGIN
+    ICON            IDR_MAINFRAME,IDC_STATIC,11,17,20,20
+    LTEXT           "EMFexplorer Version 1.0",IDC_STATIC,40,10,119,8,
+                    SS_NOPREFIX
+    LTEXT           "Copyright (C) 2003 Smith Charles",IDC_STATIC,40,25,119,
+                    8
+    DEFPUSHBUTTON   "OK",IDOK,178,7,50,14,WS_GROUP
+    LTEXT           "Copyright 2003-2004 FrazMitic",IDC_STATIC,40,54,140,8
+    LTEXT           "Windows GUI for EMF",IDC_STATIC,39,41,76,8
+END
+
+IDD_SCEMFINSPECT_DIALOG DIALOG DISCARDABLE  0, 0, 572, 209
+STYLE DS_CONTROL | WS_CHILD
+FONT 8, "MS Sans Serif"
+BEGIN
+    PUSHBUTTON      "Stop",IDC_BTN_STOPBRK,15,1,50,14
+    CONTROL         "Progress1",IDC_PROGRESS_BRK,"msctls_progress32",
+                    WS_BORDER,1,19,537,14
+    EDITTEXT        IDC_EDIT_BRKCOUNT,66,1,74,14,ES_AUTOHSCROLL | 
+                    ES_READONLY
+    PUSHBUTTON      "Close",IDCANCEL,393,1,50,14
+    EDITTEXT        IDC_EDIT_DPI,152,1,55,14,ES_AUTOHSCROLL | ES_READONLY | 
+                    NOT WS_TABSTOP
+    EDITTEXT        IDC_EDIT_SIZE,209,1,63,14,ES_AUTOHSCROLL | ES_READONLY | 
+                    NOT WS_TABSTOP
+    PUSHBUTTON      "Save...",IDC_BTN_SAVERTF,275,1,50,14
+    PUSHBUTTON      "Copy All",IDC_BTN_COPYALL,326,1,50,14
+END
+
+IDD_OPT_GENPANE DIALOG DISCARDABLE  0, 0, 261, 110
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "On Save / Load"
+FONT 8, "MS Sans Serif"
+BEGIN
+    GROUPBOX        "On document load (if no settings)",IDC_STATIC,4,19,127,
+                    59,WS_GROUP
+    CONTROL         "Use default settings",IDC_RADIO_OPTGEN_USEDFLT,"Button",
+                    BS_AUTORADIOBUTTON | WS_GROUP,14,35,78,10
+    CONTROL         "Use last settings",IDC_RADIO_OPTGEN_USELAST,"Button",
+                    BS_AUTORADIOBUTTON,15,54,67,10
+    GROUPBOX        "On document save",IDC_STATIC,135,20,117,58,WS_GROUP
+    CONTROL         "Convert only",IDC_RADIO_OPTGEN_SAVECONVERTED,"Button",
+                    BS_AUTORADIOBUTTON | WS_GROUP,143,37,55,10
+    CONTROL         "Save as displayed (wysiwyg)",
+                    IDC_RADIO_OPTGEN_SAVEWYSIWYG,"Button",BS_AUTORADIOBUTTON,
+                    143,54,105,10
+END
+
+IDD_PROPPAGE_COLORS DIALOG DISCARDABLE  0, 0, 250, 110
+STYLE WS_CHILD
+FONT 8, "MS Sans Serif"
+BEGIN
+    GROUPBOX        "Paper Color",IDC_STATIC,15,6,121,45,WS_GROUP
+    CONTROL         "Transparent",IDC_RADIO_PAPERCOLOR_TRANS,"Button",
+                    BS_AUTORADIOBUTTON | WS_GROUP,20,17,54,10
+    CONTROL         "System",IDC_RADIO_PAPERCOLOR_SYS,"Button",
+                    BS_AUTORADIOBUTTON,20,27,39,10
+    CONTROL         "RGB",IDC_RADIO_PAPERCOLOR_RGB,"Button",
+                    BS_AUTORADIOBUTTON,20,39,31,10
+    COMBOBOX        IDC_COMBO_PAPERCOLOR_SYS,76,22,54,218,CBS_DROPDOWNLIST | 
+                    CBS_OWNERDRAWVARIABLE | CBS_SORT | WS_VSCROLL | WS_GROUP | 
+                    WS_TABSTOP
+    COMBOBOX        IDC_COMBO_PAPERCOLOR_RGB,76,35,54,218,CBS_DROPDOWNLIST | 
+                    CBS_OWNERDRAWVARIABLE | WS_VSCROLL | WS_TABSTOP
+    GROUPBOX        "Reverse video",IDC_STATIC,147,6,82,46,WS_GROUP
+    CONTROL         "None",IDC_RADIO_RVIDEO_NONE,"Button",BS_AUTORADIOBUTTON | 
+                    WS_GROUP,157,16,33,10
+    CONTROL         "Normal (Full)",IDC_RADIO_RVIDEO_FULL,"Button",
+                    BS_AUTORADIOBUTTON,157,27,55,10
+    CONTROL         "Skip bitmaps",IDC_RADIO_RVIDEO_SKIPBITMAPS,"Button",
+                    BS_AUTORADIOBUTTON,157,40,56,10
+    GROUPBOX        "Transparency Mode",IDC_STATIC,13,55,216,48,WS_GROUP
+    CONTROL         "Normal (transparent objects only)",
+                    IDC_RADIO_TRANSP_NORMAL,"Button",BS_AUTORADIOBUTTON | 
+                    WS_GROUP,17,66,119,10
+    CONTROL         "White color transparent, except in bitmaps",
+                    IDC_RADIO_TRANSP_SKIPBITMAPS,"Button",BS_AUTORADIOBUTTON,
+                    17,77,148,10
+    CONTROL         "Make white color transparent everywhere",
+                    IDC_RADIO_TRANSP_FULL,"Button",BS_AUTORADIOBUTTON,17,87,
+                    146,10
+END
+
+IDD_PROPPAGE_GDIPLUS DIALOG DISCARDABLE  0, 0, 250, 110
+STYLE WS_CHILD
+FONT 8, "MS Sans Serif"
+BEGIN
+    CONTROL         "Use GDI+",IDC_CHK_OPTGEN_USEGDIP,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,7,7,47,10
+    GROUPBOX        "Text Rendering",IDC_STATIC,7,22,118,82
+    LTEXT           "Quality",IDC_STATIC,11,35,22,8
+    COMBOBOX        IDC_COMBO_GDIP_TEXTHINTING,11,47,107,87,CBS_DROPDOWNLIST | 
+                    WS_VSCROLL | WS_TABSTOP
+    LTEXT           "Contrast",IDC_STATIC,11,70,27,8
+    COMBOBOX        IDC_COMBO_GDIP_TEXTCONTRAST,11,81,72,228,
+                    CBS_DROPDOWNLIST | WS_VSCROLL | WS_TABSTOP
+    GROUPBOX        "Images and Lines Modes",IDC_STATIC,130,20,112,85
+    LTEXT           "Smoothing",IDC_STATIC,137,30,34,8
+    COMBOBOX        IDC_COMBO_GDIP_SMOOTHING,137,39,99,89,CBS_DROPDOWNLIST | 
+                    WS_VSCROLL | WS_TABSTOP
+    LTEXT           "Interpolation",IDC_STATIC,137,53,40,8
+    COMBOBOX        IDC_COMBO_GDIP_INTERPOLATION,137,62,99,92,
+                    CBS_DROPDOWNLIST | WS_VSCROLL | WS_TABSTOP
+    LTEXT           "PixelOffset",IDC_STATIC,137,78,34,8
+    COMBOBOX        IDC_COMBO_GDIP_PIXELOFFSET,137,87,99,85,CBS_DROPDOWNLIST | 
+                    WS_VSCROLL | WS_TABSTOP
+END
+
+IDD_PROPPAGE_GENERAL DIALOG DISCARDABLE  0, 0, 250, 110
+STYLE WS_CHILD
+FONT 8, "MS Sans Serif"
+BEGIN
+    GROUPBOX        "Orientation",-1,15,6,94,35,WS_GROUP
+    CONTROL         "0",IDC_RADIO_ORIENT0,"Button",BS_AUTORADIOBUTTON | 
+                    WS_GROUP,20,17,20,10
+    CONTROL         "90",IDC_RADIO_ORIENT90,"Button",BS_AUTORADIOBUTTON,20,
+                    28,24,10
+    CONTROL         "180",IDC_RADIO_ORIENT180,"Button",BS_AUTORADIOBUTTON,65,
+                    17,28,10
+    CONTROL         "270",IDC_RADIO_ORIENT270,"Button",BS_AUTORADIOBUTTON,65,
+                    28,28,10
+    GROUPBOX        "Scaling",-1,15,45,93,29,WS_GROUP
+    COMBOBOX        IDC_COMBO_OPTGEN_ZOOM,22,55,78,186,CBS_DROPDOWN | 
+                    WS_VSCROLL | WS_GROUP | WS_TABSTOP
+    GROUPBOX        "Margins",-1,15,76,95,29,WS_GROUP
+    EDITTEXT        IDC_EDIT_MARGINS_L,19,86,21,14,ES_AUTOHSCROLL | 
+                    ES_WANTRETURN | ES_NUMBER
+    EDITTEXT        IDC_EDIT_MARGINS_T,41,86,21,14,ES_AUTOHSCROLL | 
+                    ES_WANTRETURN | ES_NUMBER
+    EDITTEXT        IDC_EDIT_MARGINS_R,63,86,21,14,ES_AUTOHSCROLL | 
+                    ES_WANTRETURN | ES_NUMBER
+    EDITTEXT        IDC_EDIT_MARGINS_B,85,86,21,14,ES_AUTOHSCROLL | 
+                    ES_WANTRETURN | ES_NUMBER
+    GROUPBOX        "Picture Frame",-1,125,7,117,24,WS_GROUP
+    CONTROL         "Border",IDC_CHECK_PICTURE_BORDER,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,135,17,36,10
+    CONTROL         "Shadow",IDC_CHECK_PICTURE_SHADOW,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,186,17,42,10
+    GROUPBOX        "Control",-1,126,32,117,74,WS_GROUP
+    LTEXT           "Border:",-1,159,41,24,8
+    COMBOBOX        IDC_COMBO_CTL_BORDER,186,39,48,58,CBS_DROPDOWNLIST | 
+                    WS_VSCROLL | WS_TABSTOP
+    GROUPBOX        "Background",-1,130,52,109,50,WS_GROUP
+    CONTROL         "Transparent (ambient)",IDC_RADIO_CTLCOLOR_TRANS,"Button",
+                    BS_AUTORADIOBUTTON | WS_GROUP,136,62,94,10
+    CONTROL         "System",IDC_RADIO_CTLCOLOR_SYS,"Button",
+                    BS_AUTORADIOBUTTON,136,75,39,10
+    CONTROL         "RGB",IDC_RADIO_CTLCOLOR_RGB,"Button",BS_AUTORADIOBUTTON,
+                    136,88,31,10
+    COMBOBOX        IDC_COMBO_CTLCOLOR_SYS,184,73,48,218,CBS_DROPDOWNLIST | 
+                    CBS_OWNERDRAWVARIABLE | CBS_SORT | WS_VSCROLL | WS_GROUP | 
+                    WS_TABSTOP
+    COMBOBOX        IDC_COMBO_CTLCOLOR_RGB,184,87,47,218,CBS_DROPDOWNLIST | 
+                    CBS_OWNERDRAWVARIABLE | WS_VSCROLL | WS_TABSTOP
+END
+
+IDD_PROPPAGE_SETTINGS DIALOG DISCARDABLE  0, 0, 270, 140
+STYLE WS_CHILD
+FONT 8, "MS Sans Serif"
+BEGIN
+END
+
+IDD_DOC_REFLOW DIALOG DISCARDABLE  0, 0, 512, 302
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Pages Manager"
+FONT 8, "MS Sans Serif"
+BEGIN
+    LISTBOX         IDC_LST_PAGES,13,13,102,154,LBS_NOINTEGRALHEIGHT | 
+                    WS_VSCROLL | WS_HSCROLL | WS_TABSTOP
+    GROUPBOX        "Move Page",IDC_STATIC,16,188,92,82
+    PUSHBUTTON      "Top",IDC_BTN_TOP,25,199,37,14
+    PUSHBUTTON      "Bottom",IDC_BTN_BOTTOM,62,199,37,14
+    PUSHBUTTON      "Left",IDC_BTN_LEFT,25,216,37,14
+    PUSHBUTTON      "Right",IDC_BTN_RIGHT,62,216,37,14
+    PUSHBUTTON      "Up",IDC_BTN_UP,25,233,37,14
+    PUSHBUTTON      "Down",IDC_BTN_DOWN,62,233,37,14
+    LTEXT           "Position:",IDC_STATIC,34,254,28,8
+    EDITTEXT        IDC_EDIT_PAGE_POS,65,252,33,14,ES_AUTOHSCROLL | 
+                    ES_WANTRETURN | ES_NUMBER
+    CONTROL         "",IDC_PICT_ALLPAGES,"Static",SS_BLACKFRAME | NOT 
+                    WS_VISIBLE,117,12,224,216
+    GROUPBOX        "Page Information",IDC_STATIC,346,168,155,102
+    LTEXT           "File:",IDC_STATIC,352,181,14,8
+    EDITTEXT        IDC_EDIT_CURFILE,373,178,121,14,ES_AUTOHSCROLL
+    PUSHBUTTON      "Replace...",IDC_BTN_REPLACE,77,171,37,14
+    LTEXT           "Credit:",IDC_STATIC,352,199,21,8
+    EDITTEXT        IDC_EDIT_CREDIT,373,196,121,14,ES_AUTOHSCROLL
+    LTEXT           "URL:",IDC_STATIC,352,217,18,8
+    EDITTEXT        IDC_EDIT_URL,374,214,121,14,ES_AUTOHSCROLL
+    LTEXT           "Comments:",IDC_STATIC,352,230,36,8
+    EDITTEXT        IDC_EDIT_COMMENT,377,239,119,24,ES_MULTILINE | 
+                    ES_AUTOVSCROLL | ES_AUTOHSCROLL | ES_WANTRETURN
+    DEFPUSHBUTTON   "OK",IDOK,386,277,50,14
+    PUSHBUTTON      "Cancel",IDCANCEL,448,277,50,14
+    CONTROL         "",IDC_PICT_CURPAGE,"Static",SS_BLACKFRAME,346,12,153,
+                    153
+    PUSHBUTTON      "Remove",IDC_BTN_REMOVE,13,171,36,14
+    PUSHBUTTON      "Add...",IDC_BTN_ADD,49,171,27,14
+    EDITTEXT        IDC_EDIT_DOC_DIR,154,239,183,14,ES_AUTOHSCROLL | 
+                    ES_READONLY
+    LTEXT           "Location:",IDC_STATIC,121,242,30,8
+    CONTROL         "Use current page's credit and credit URL as defaults",
+                    IDC_CHK_DEFAULT,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,
+                    121,254,181,10
+    GROUPBOX        "Document information",IDC_STATIC,116,229,227,41
+    PUSHBUTTON      "Set",IDC_BTN_VALIDATE,351,246,20,14
+END
+
+
+#ifndef _MAC
+/////////////////////////////////////////////////////////////////////////////
+//
+// Version
+//
+
+VS_VERSION_INFO VERSIONINFO
+ FILEVERSION 1,0,0,1
+ PRODUCTVERSION 1,0,0,1
+ FILEFLAGSMASK 0x3fL
+#ifdef _DEBUG
+ FILEFLAGS 0x1L
+#else
+ FILEFLAGS 0x0L
+#endif
+ FILEOS 0x4L
+ FILETYPE 0x1L
+ FILESUBTYPE 0x0L
+BEGIN
+    BLOCK "StringFileInfo"
+    BEGIN
+        BLOCK "040904b0"
+        BEGIN
+            VALUE "Comments", "Beta version\0"
+            VALUE "CompanyName", "Smith Charles\0"
+            VALUE "FileDescription", "EMFexplorer MFC Application\0"
+            VALUE "FileVersion", "1, 0, 0, 1\0"
+            VALUE "InternalName", "EMFexplorer\0"
+            VALUE "LegalCopyright", "Copyright (C) 2004\0"
+            VALUE "LegalTrademarks", "\0"
+            VALUE "OriginalFilename", "EMFexplorer.EXE\0"
+            VALUE "PrivateBuild", "\0"
+            VALUE "ProductName", "EMFexplorer Application\0"
+            VALUE "ProductVersion", "1, 0, 0, 1\0"
+            VALUE "SpecialBuild", "\0"
+        END
+    END
+    BLOCK "VarFileInfo"
+    BEGIN
+        VALUE "Translation", 0x409, 1200
+    END
+END
+
+#endif    // !_MAC
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO DISCARDABLE 
+BEGIN
+    IDD_ABOUTBOX, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 228
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 71
+    END
+
+    IDD_OPT_GENPANE, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 254
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 103
+    END
+
+    IDD_PROPPAGE_COLORS, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 243
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 103
+    END
+
+    IDD_PROPPAGE_GDIPLUS, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 243
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 103
+    END
+
+    IDD_PROPPAGE_GENERAL, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 243
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 103
+    END
+
+    IDD_PROPPAGE_SETTINGS, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 263
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 133
+    END
+
+    IDD_DOC_REFLOW, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 505
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 295
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// String Table
+//
+
+STRINGTABLE PRELOAD DISCARDABLE 
+BEGIN
+    IDR_MAINFRAME           "EMFexplorer\n\nEMFexplorer\nEMFexplorer Files (*.bgp)\n.bgp\nEMFexplorer.Document\nEMFexplorer Document"
+END
+
+STRINGTABLE PRELOAD DISCARDABLE 
+BEGIN
+    AFX_IDS_APP_TITLE       "EMFexplorer"
+    AFX_IDS_IDLEMESSAGE     "Ready"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_INDICATOR_EXT        "EXT"
+    ID_INDICATOR_CAPS       "CAP"
+    ID_INDICATOR_NUM        "NUM"
+    ID_INDICATOR_SCRL       "SCRL"
+    ID_INDICATOR_OVR        "OVR"
+    ID_INDICATOR_REC        "REC"
+    ID_INDICATOR_PAGE       " Page  %1!d! / %2!d!% "
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_FILE_NEW             "Create a new document\nNew"
+    ID_FILE_OPEN            "Open an existing document\nOpen"
+    ID_FILE_CLOSE           "Close the active document\nClose"
+    ID_FILE_SAVE            "Save the main document\nSave"
+    ID_FILE_SAVE_AS         "Save the main document with a new name\nSave As"
+    ID_FILE_PAGE_SETUP      "Change the printing options\nPage Setup"
+    ID_FILE_PRINT_SETUP     "Change the printer and printing options\nPrint Setup"
+    ID_FILE_PRINT           "Print the active document\nPrint"
+    ID_FILE_PRINT_PREVIEW   "Display full pages\nPrint Preview"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_APP_ABOUT            "Display program information, version number and copyright\nAbout"
+    ID_APP_EXIT             "Quit the application; prompts to save documents\nExit"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_FILE_MRU_FILE1       "Open this document"
+    ID_FILE_MRU_FILE2       "Open this document"
+    ID_FILE_MRU_FILE3       "Open this document"
+    ID_FILE_MRU_FILE4       "Open this document"
+    ID_FILE_MRU_FILE5       "Open this document"
+    ID_FILE_MRU_FILE6       "Open this document"
+    ID_FILE_MRU_FILE7       "Open this document"
+    ID_FILE_MRU_FILE8       "Open this document"
+    ID_FILE_MRU_FILE9       "Open this document"
+    ID_FILE_MRU_FILE10      "Open this document"
+    ID_FILE_MRU_FILE11      "Open this document"
+    ID_FILE_MRU_FILE12      "Open this document"
+    ID_FILE_MRU_FILE13      "Open this document"
+    ID_FILE_MRU_FILE14      "Open this document"
+    ID_FILE_MRU_FILE15      "Open this document"
+    ID_FILE_MRU_FILE16      "Open this document"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_NEXT_PANE            "Switch to the next window pane\nNext Pane"
+    ID_PREV_PANE            "Switch back to the previous window pane\nPrevious Pane"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_WINDOW_SPLIT         "Split the active window into panes\nSplit"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_EDIT_CLEAR           "Erase the selection\nErase"
+    ID_EDIT_CLEAR_ALL       "Erase everything\nErase All"
+    ID_EDIT_COPY            "Copy the current page and put it on the Clipboard\nCopy Page"
+    ID_EDIT_CUT             "Remove the current page from master\nRemove page"
+    ID_EDIT_FIND            "Find the specified text\nFind"
+    ID_EDIT_PASTE           "Insert Clipboard contents as new pages\nPaste"
+    ID_EDIT_REPEAT          "Repeat the last action\nRepeat"
+    ID_EDIT_REPLACE         "Replace specific text with different text\nReplace"
+    ID_EDIT_SELECT_ALL      "Select the entire document\nSelect All"
+    ID_EDIT_UNDO            "Undo the last action (Not Implemented)\nUndo"
+    ID_EDIT_REDO            "Redo the previously undone action\nRedo"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_VIEW_TOOLBAR         "Show or hide the toolbar\nToggle ToolBar"
+    ID_VIEW_STATUS_BAR      "Show or hide the status bar\nToggle StatusBar"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    AFX_IDS_SCSIZE          "Change the window size"
+    AFX_IDS_SCMOVE          "Change the window position"
+    AFX_IDS_SCMINIMIZE      "Reduce the window to an icon"
+    AFX_IDS_SCMAXIMIZE      "Enlarge the window to full size"
+    AFX_IDS_SCNEXTWINDOW    "Switch to the next document window"
+    AFX_IDS_SCPREVWINDOW    "Switch to the previous document window"
+    AFX_IDS_SCCLOSE         "Close the active window and prompts to save the documents"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    AFX_IDS_SCRESTORE       "Restore the window to normal size"
+    AFX_IDS_SCTASKLIST      "Activate Task List"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    AFX_IDS_PREVIEW_CLOSE   "Close print preview mode\nCancel Preview"
+    IDS_PPG_GENERAL         "General"
+    IDS_PPG_GDIP            "GDI+"
+    IDS_PPG_COLORS          "Picture Colors"
+    IDS_PPG_DFLT_SETTINGS   "Default Settings"
+    IDS_PPG_DOC_SETTINGS    "Document Settings"
+    IDS_EMFXMERGE_ERR       "Merging EMFexplorer documents is not supported."
+    IDS_REFLOWADDFILES_ERR  "Could not insert the selected document(s).\nOnly image files from the same directory are allowed in this context."
+    IDS_REFLOW_CONFIRM_RENAME 
+                            "Some files will be renamed on disk.\nProceed anyway?"
+    IDS_FILE_UNKNOWN        "File type not recognized."
+    IDS_FILEMIX_ERR         "Can't mix files from different directories."
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_TBNAV_FIRST          "Goto First Page\nFirst Page"
+    ID_TBNAV_PREV           "Goto Previous Page\nPrevious Page"
+    ID_TBNAV_NEXT           "Goto Next Page\nNext Page"
+    ID_TBNAV_LAST           "Goto Last Page\nLast Page"
+    ID_TB_DPI_DEC           "Reduce DPI\nReduce DPI"
+    ID_TB_DPI_INC           "Augment DPI\nAugment DPI"
+    ID_TB_DPI_100           "Actual Size\nActual Size"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_TB_DPI_MONITOR       "Match Monitor DPI\nMatch Monitor DPI"
+    ID_TB_PAGE_ROTATELEFT   "Rotate Left\nRotate Left"
+    ID_TB_PAGE_ROTATERIGHT  "Rotate Right\nRotate Right"
+    ID_TBDOC_BKCOLOR        "Change background color\nBackground Color"
+    ID_TB_PAGE_REVERSEVIDEO "Toggle Reverse Video\nReverse Video"
+    ID_TBNAV_TOPAGE         "Goto Specified Page\nGoto Page"
+    ID_TBVIEW_ZOOM          "Select zoom factor\nZoom"
+    ID_TBVIEW_BKCOLOR       "Select Background Color\nBackground  Color"
+    ID_VIEW_EMF_ASTEXT      "Display records as text\nEMF as Text"
+    ID_TBDOC_USEGDIP        "Toggle GDI+ rasterizer ON/OFF\nUse GDI+"
+    ID_TBGDIP_TEXTRENDERING "Text Rendering Quality\nText Rendering"
+    ID_TBGDIP_TEXTCONTRAST  "Text Contrast\nText Contrast"
+    ID_TBGDIP_CURVESMOOTHING "Line art smoothing\nLine Smoothing"
+    ID_TBGDIP_IMAGESMOOTHING "Image Smoothing\nImage Smoothing"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_TBGDIP_IMAGEPIXELSOFFSET "Image Pixels Offset\nPixel Offset"
+    ID_VIEW_GDIP_BAR        "Show or Hide the GDI+ Toolbar\nToggle GDI+ Toolbar"
+    ID_TOOLS_OPTIONS        "General options, Color preferences\nOptions"
+    ID_FILE_SAVEALL         "Save all pages with a new name\nSave All Pages As"
+    ID_TBDOC_RESIZEALL      "Make all pages same size\nSize All Pages"
+    ID_TBDOC_SETTINGS       "Change current document's settings \nDocument Settings"
+    ID_TBDOC_REFLOW         "Setup pages order, comments, credit, etc.\nReflow"
+    ID_FILE_SAVEPAGE        "Save the active page\nSave Page"
+    ID_TOOLS_PAGE_URL       "Launch the credit URL in default browser\nOpen Credit URL"
+    ID_TBDOC_ADD_PAGES      "Add new pages from files\nAdd Pages"
+    ID_TBDOC_REMOVE_PAGE    "Remove the current page (file not deleted)\nRemove Page"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    IDP_OLE_INIT_FAILED     "OLE initialization failed.  Make sure that the OLE libraries are the correct version."
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    IDS_FILE_REPLACE_ERR    "Invalid file type for replacement."
+    IDS_FILE_INSERTONE_FAILED "Could not insert file."
+    IDS_FILE_INSERTMANY_FAILED "Not all files could be inserted."
+    IDS_FILE_INSERTTYPE_ERR "File type unrecognized or unacceptable in the context."
+    IDS_FILE_CONFIRM_COPY   "Some files must be copied to the new directory, overwriting existing aliases if any.\nProceed anyway?"
+    IDS_FILE_LOADTYPE_ERR   "File type not supported by %s"
+    IDS_FILE_LOAD_ERR       "Unable to open document"
+    IDS_DLG_TITLE_OPTIONS   "Options"
+    IDS_DLG_TITLE_DOCSETTINGS "Document Settings"
+    IDS_DLG_TITLE_UNSAVEDDOCSETTINGS "Document Settings (save required)"
+    IDS_FILE_RENAME_ERR     "Unable to rename %s\nto %s"
+    IDS_FILE_RENAME_ERRLAST "Some files could not be renamed."
+END
+
+#endif    // English (U.S.) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+/////////////////////////////////////////////////////////////////////////////
+// French (France) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_FRA)
+#ifdef _WIN32
+LANGUAGE LANG_FRENCH, SUBLANG_FRENCH
+#pragma code_page(1252)
+#endif //_WIN32
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "resource.h\0"
+END
+
+2 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "#include ""afxres.h""\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "#define _AFX_NO_SPLITTER_RESOURCES\r\n"
+    "#define _AFX_NO_OLE_RESOURCES\r\n"
+    "#define _AFX_NO_TRACKER_RESOURCES\r\n"
+    "#define _AFX_NO_PROPERTY_RESOURCES\r\n"
+    "\r\n"
+    "#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)\r\n"
+    "#ifdef _WIN32\r\n"
+    "LANGUAGE 9, 1\r\n"
+    "#pragma code_page(1252)\r\n"
+    "#endif //_WIN32\r\n"
+    "#include ""res\\EMFexplorer.rc2""  // non-Microsoft Visual C++ edited resources\r\n"
+    "#include ""afxres.rc""         // Standard components\r\n"
+    "#include ""afxprint.rc""       // printing/print preview resources\r\n"
+    "#include ""afxolesv.rc""    // OLE server resources\r\n"
+    "#endif\r\n"
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+#endif    // French (France) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+#define _AFX_NO_SPLITTER_RESOURCES
+#define _AFX_NO_OLE_RESOURCES
+#define _AFX_NO_TRACKER_RESOURCES
+#define _AFX_NO_PROPERTY_RESOURCES
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)
+#ifdef _WIN32
+LANGUAGE 9, 1
+#pragma code_page(1252)
+#endif //_WIN32
+#include "res\EMFexplorer.rc2"  // non-Microsoft Visual C++ edited resources
+#include "afxres.rc"         // Standard components
+#include "afxprint.rc"       // printing/print preview resources
+#include "afxolesv.rc"    // OLE server resources
+#endif
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+

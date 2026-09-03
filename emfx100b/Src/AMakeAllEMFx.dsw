@@ -1,0 +1,167 @@
+Microsoft Developer Studio Workspace File, Format Version 6.00
+# WARNING: DO NOT EDIT OR DELETE THIS WORKSPACE FILE!
+
+###############################################################################
+
+Project: "AMakeAllEMFx"=.\AMakeAllEMFx.dsp - Package Owner=<4>
+
+Package=<5>
+{{{
+}}}
+
+Package=<4>
+{{{
+    Begin Project Dependency
+    Project_Dep_Name EMFexplorer
+    End Project Dependency
+    Begin Project Dependency
+    Project_Dep_Name SCEMFAx
+    End Project Dependency
+}}}
+
+###############################################################################
+
+Project: "EMFexplorer"=.\Client\EMFexplorer\EMFexplorer.dsp - Package Owner=<4>
+
+Package=<5>
+{{{
+}}}
+
+Package=<4>
+{{{
+    Begin Project Dependency
+    Project_Dep_Name SCEMFLib
+    End Project Dependency
+    Begin Project Dependency
+    Project_Dep_Name SCWinLib
+    End Project Dependency
+    Begin Project Dependency
+    Project_Dep_Name SCErrorLib
+    End Project Dependency
+    Begin Project Dependency
+    Project_Dep_Name SCGenLib
+    End Project Dependency
+    Begin Project Dependency
+    Project_Dep_Name SCSharedLib
+    End Project Dependency
+    Begin Project Dependency
+    Project_Dep_Name zlib
+    End Project Dependency
+}}}
+
+###############################################################################
+
+Project: "SCEMFAx"=.\Client\SCEMFAx\SCEMFAx.dsp - Package Owner=<4>
+
+Package=<5>
+{{{
+}}}
+
+Package=<4>
+{{{
+    Begin Project Dependency
+    Project_Dep_Name SCEMFLib
+    End Project Dependency
+    Begin Project Dependency
+    Project_Dep_Name SCErrorLib
+    End Project Dependency
+    Begin Project Dependency
+    Project_Dep_Name SCWinLib
+    End Project Dependency
+    Begin Project Dependency
+    Project_Dep_Name SCGenLib
+    End Project Dependency
+    Begin Project Dependency
+    Project_Dep_Name SCSharedLib
+    End Project Dependency
+    Begin Project Dependency
+    Project_Dep_Name zlib
+    End Project Dependency
+}}}
+
+###############################################################################
+
+Project: "SCEMFLib"=.\Client\SCEMFLib\SCEMFLib.dsp - Package Owner=<4>
+
+Package=<5>
+{{{
+}}}
+
+Package=<4>
+{{{
+}}}
+
+###############################################################################
+
+Project: "SCErrorLib"=.\Common\ErrorLib\SCErrorLib.dsp - Package Owner=<4>
+
+Package=<5>
+{{{
+}}}
+
+Package=<4>
+{{{
+}}}
+
+###############################################################################
+
+Project: "SCGenLib"=.\Common\scgenlib\SCGenLib.dsp - Package Owner=<4>
+
+Package=<5>
+{{{
+}}}
+
+Package=<4>
+{{{
+}}}
+
+###############################################################################
+
+Project: "SCSharedLib"=.\CLIENT\SCSharedLib\SCSharedLib.dsp - Package Owner=<4>
+
+Package=<5>
+{{{
+}}}
+
+Package=<4>
+{{{
+}}}
+
+###############################################################################
+
+Project: "SCWinLib"=.\Client\SCWinLib\SCWinLib.dsp - Package Owner=<4>
+
+Package=<5>
+{{{
+}}}
+
+Package=<4>
+{{{
+}}}
+
+###############################################################################
+
+Project: "zlib"=.\COMMON\zlib\zlib.dsp - Package Owner=<4>
+
+Package=<5>
+{{{
+}}}
+
+Package=<4>
+{{{
+}}}
+
+###############################################################################
+
+Global:
+
+Package=<5>
+{{{
+}}}
+
+Package=<3>
+{{{
+}}}
+
+###############################################################################
+

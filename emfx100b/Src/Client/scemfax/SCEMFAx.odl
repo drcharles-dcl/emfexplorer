@@ -1,0 +1,120 @@
+/*
+*	This file is part of the EMFexplorer projet.
+*	Copyright (C) 2004 Smith Charles.
+*
+*	This library is free software; you can redistribute it and/or
+*	modify it under the terms of the GNU Lesser General Public
+*	License as published by the Free Software Foundation; either
+*	version 2.1 of the License, or (at your option) any later version.
+*
+*   This library is distributed in the hope that it will be useful,
+*   but WITHOUT ANY WARRANTY; without even the implied warranty of
+*   MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU
+*   Lesser General Public License for more details.
+*
+*   You should have received a copy of the GNU Lesser General Public
+*   License along with this library; if not, write to the Free Software
+*   Foundation, Inc., 59 Temple Place, Suite 330, Boston, MA  02111-1307  USA.
+*
+*	Extension: for commercial use, apply the Equity Public License, which
+*	adds to the normal terms of the GLPL a condition of donation to the author.
+*   If you are interested in support for this source code,
+*   contact Smith Charles <smith.charles@free.fr> for more information.
+*/
+
+// SCEMFAx.odl : type library source for ActiveX Control project.
+
+// This file will be processed by the Make Type Library (mktyplib) tool to
+// produce the type library (SCEMFAx.tlb) that will become a resource in
+// SCEMFAx.ocx.
+
+#include <olectl.h>
+#include <idispids.h>
+
+[ uuid(DEFA7D60-DE12-4055-953E-DFB2C9B894D6), version(1.0),
+  helpfile("SCEMFAx.hlp"),
+  helpstring("SCEMFAx ActiveX Control"),
+  control ]
+library SCEMFAXLib
+{
+	importlib(STDOLE_TLB);
+	importlib(STDTYPE_TLB);
+
+	//  Primary dispatch interface for CSCEMFAxCtrl
+
+	[ uuid(C7CF7C71-EFC3-4B48-893F-C6AFC89E3918),
+	  helpstring("Dispatch interface for SCEMFAx Control"), hidden ]
+	dispinterface _DSCEMFAx
+	{
+		properties:
+			// NOTE - ClassWizard will maintain property information here.
+			//    Use extreme caution when editing this section.
+			//{{AFX_ODL_PROP(CSCEMFAxCtrl)
+			[id(DISPID_READYSTATE), readonly] long ReadyState;
+			[id(1)] BSTR Picture;
+			[id(2)] short CtlBorder;
+			[id(3)] short CtlColorStyle;
+			[id(4)] OLE_COLOR CtlColor;
+			[id(5)] boolean PageBorderVisible;
+			[id(6)] boolean PageShadowVisible;
+			[id(7)] short PaperColorStyle;
+			[id(8)] OLE_COLOR PaperColor;
+			[id(9)] short FitMode;
+			[id(10)] float Scale;
+			[id(11)] OLE_XSIZE_PIXELS MarginL;
+			[id(12)] OLE_YSIZE_PIXELS MarginT;
+			[id(13)] OLE_XSIZE_PIXELS MarginR;
+			[id(14)] OLE_YSIZE_PIXELS MarginB;
+			[id(15)] short PageOrientation;
+			[id(16)] short TransparencyMode;
+			[id(17)] short ReverseVideoMode;
+			[id(18)] boolean GDIplusEnabled;
+			[id(19)] short TextRenderingHint;
+			[id(20)] short TextContrast;
+			[id(21)] short SmoothingMode;
+			[id(22)] short InterpolationMode;
+			[id(23)] short PixelOffsetMode;
+			[id(0)] BSTR _Picture;
+			//}}AFX_ODL_PROP
+
+		methods:
+			// NOTE - ClassWizard will maintain method information here.
+			//    Use extreme caution when editing this section.
+			//{{AFX_ODL_METHOD(CSCEMFAxCtrl)
+			[id(24)] long SaveAs(BSTR lpszPathName, short nFileType, VARIANT_BOOL bSaveAll);
+			//}}AFX_ODL_METHOD
+
+			[id(DISPID_ABOUTBOX)] void AboutBox();
+	};
+
+	//  Event dispatch interface for CSCEMFAxCtrl
+
+	[ uuid(4E2C90DA-F52C-4425-95B0-BB14E444C51A),
+	  helpstring("Event interface for SCEMFAx Control") ]
+	dispinterface _DSCEMFAxEvents
+	{
+		properties:
+			//  Event interface has no properties
+
+		methods:
+			// NOTE - ClassWizard will maintain event information here.
+			//    Use extreme caution when editing this section.
+			//{{AFX_ODL_EVENT(CSCEMFAxCtrl)
+			[id(DISPID_READYSTATECHANGE)] void ReadyStateChange();
+			//}}AFX_ODL_EVENT
+	};
+
+	//  Class information for CSCEMFAxCtrl
+
+	[ uuid(59F9FF0E-0C91-4B80-8DE3-119E19A96AE0),
+	  helpstring("SCEMFAx Control"), control ]
+	coclass SCEMFAx
+	{
+		[default] dispinterface _DSCEMFAx;
+		[default, source] dispinterface _DSCEMFAxEvents;
+	};
+
+
+	//{{AFX_APPEND_ODL}}
+	//}}AFX_APPEND_ODL}}
+};
