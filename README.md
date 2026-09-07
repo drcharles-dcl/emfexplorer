@@ -50,10 +50,23 @@ The development and quality control of EMFexplorer relied on multi-platform meta
 
 📦 **[Download the Testing Corpus (testfiles.zip)](testfiles.zip)** *(~35 MB)*
 
+### The `.bgp` (Bound Graphics Pages) Format
+The `MiniCorpus` utilizes EMFexplorer's native **`.bgp`** format—a specialized document container structure designed to pack multiple standalone pages (vector `.emf` or standard raster files) into an ordered graphic collection. 
+* **Browsing Collections:** To explore a collection, open a directory within the test suite using `EMFexplorer.exe` and execute/double-click the master `.bgp` indexing file.
+* **Reflowing Capabilities:** The project features a built-in **Pages Manager** (accessible via the `Document -> [Reflow...]` menu route), allowing developers to order, swap, append clipboard structures, or re-index multi-page graphic albums interactively.
+
 ### Included Suites
-* **MiniCorpus:** The curated mini Charles E. Caplife corpus featuring multi-layered, highly complex vector structures to push layout engines to their rendering limits.
+* **MiniCorpus:** The curated mini Caplife corpus featuring multi-layered, highly complex vector structures arranged into `.bgp` volumes to push layout engines to their rendering limits. Includes historical deep-dives like *Discover Haiti*, *Discover France*, and regional profile logs.
+<details>
+<summary>🔍 Click to view the Caplife Collection Index (Full File Checklist)</summary>
+
+*(The full list of `.bgp` file paths covering the root disclaimer, FICA Soccer, Discover France, and Discover Haiti suites is included in the referenced web document.)*
+
+</details>
 * **emf_tests:** A collection of small, targeted test files ideal for isolating individual GDI/GDI+ record types, tree parsing parameters, and regression boundaries.
 * **ActiveXTests:** Specialized test environments featuring compressed Enhanced Metafile format profiles (`.emz`), preserved directly from the historical web integration and progressive streaming development framework.
+
+> 💡 **Technical Note on `.emz` Files:** The `.emz` files found in the `ActiveXTests` suite are GZIP-compressed Enhanced Metafiles (`.emf`) originally optimized for progressive web streaming. While modern web browsers completely deprecate ActiveX container hosting, the vector data remains fully accessible. You can manually unpack them by renaming the extension to `.gz` and extracting them via standard tools like 7-Zip, or programmatically decompress them using `zlib` to obtain the raw underlying `.emf` structure.
 
 ---
 
