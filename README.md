@@ -46,12 +46,14 @@ The underlying engine bridges high-level document handling with low-level vector
 ---
 
 ## Historical Test Suites & Assets
-The development and quality control of EMFexplorer relied on multi-platform metafile evaluation. A subset of these classic validation packages is preserved for testing rendering boundaries:
+The development and quality control of EMFexplorer relied on multi-platform metafile evaluation. The classic validation packages have been bundled into a single downloadable testing package containing distinct verification suites:
 
-* **Discover Haiti Set:** Complex multi-layered vector structures compiled by Charles E. Caplife.
-* **Discover France Set:** Rich structural layouts focusing on geometry and geographic curves.
-* **Fica Soccer Team Set:** Renderings highlighting object layering and vector transparency paths.
-* **Miscellaneous Test Files:** Specialized conversion samples generated from Ghostscript and `PS2Edit` inputs to push GDI record-handling to its limits.
+📦 **[Download the Testing Corpus (testfiles.zip)](testfiles.zip)** *(~35 MB)*
+
+### Included Suites
+* **MiniCorpus:** The curated mini Charles E. Caplife corpus featuring multi-layered, highly complex vector structures to push layout engines to their rendering limits.
+* **emf_tests:** A collection of small, targeted test files ideal for isolating individual GDI/GDI+ record types, tree parsing parameters, and regression boundaries.
+* **ActiveXTests:** Specialized test environments featuring compressed Enhanced Metafile format profiles (`.emz`), preserved directly from the historical web integration and progressive streaming development framework.
 
 ---
 
