@@ -1,11 +1,11 @@
-# Artefacts de build Microsoft Visual C++
+# Microsoft Visual C++ build Artifacts
 Debug/
 Release/
 x64/
 *.StaticDebug/
 *.StaticRelease/
 
-# Fichiers temporaires d'IDE et de base de données de code (anciens et récents)
+# Temporary IDE files and code database (old and new)
 *.ncb
 *.opt
 *.plg
@@ -17,7 +17,7 @@ x64/
 *.opensdf
 .vs/
 
-# Fichiers d'historique ou de swap Linux
+# History files or for Linux swap
 .DS_Store
 *~
 *.swp

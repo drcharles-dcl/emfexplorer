@@ -1,7 +1,6 @@
 # EMFexplorer
 
-<p align="center">
-  <!-- Replace this with your actual banner image link or drag-and-drop the file here -->
+<p align="center">  
   <img src="images/banner.jpg" alt="EMFexplorer - A GDI+ Experiment" width="800">
 </p>
 
@@ -33,8 +32,7 @@ This repository is a clean, historical archive of the original 2004 codebase.
 ## Project & Package Architecture
 The underlying engine bridges high-level document handling with low-level vector manipulation. The graphics library specializes in parsing and reusing documents formatted as Enhanced Metafile Format (`.emf`), Windows Metafile (`.wmf`), and GDI+ supported bitmap formats (`.bmp`, `.jpeg`, `.png`, `.tiff`, `.gif`).
 
-<p align="center">
-  <!-- Replace this with your actual architecture image link or drag-and-drop the file here -->
+<p align="center">  
   <img src="images/architecture.jpg" alt="EMFexplorer Package Architecture" width="650">
 </p>
 
